@@ -3,4 +3,26 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="dark_gray">#060807</color>
+    <color name="light_gray">#6e6e6e</color>
+    <color name="soft_gray">#1F2120</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="bottom_bar_text_gray">#999999</color>
+    <color name="red_">#ED301D</color>
+    <color name="red_dark">#7A1A12</color>
+    <color name="logout_gray">#ff999999</color>
+
+    <color name="broken_white">#f0ffffff</color>
+    <color name="toolbar_text_color">#343434</color>
+    <color name="profile_hint_color">#99343434</color>
+
+    <color name="oceanic_green">#4DD9B2</color>
+    <color name="light_orange">#FA8760</color>
+    <color name="orange">#ffa500</color>
+    <color name="broken_light_gray">#D8D8D8</color>
+    <color name="gray">#f1f1f1</color>
+    <color name="broken_black">#313131</color>
+
 </resources>
