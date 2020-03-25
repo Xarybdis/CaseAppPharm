@@ -6,6 +6,7 @@ buildscript {
     ext.retrofit_version = '2.4.0'
     ext.roomVersion = '2.2.1'
     ext.coroutines = '1.3.2'
+    ext.tikXml = '0.8.13'
     repositories {
         google()
         jcenter()
@@ -25,6 +26,10 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://maven.google.com' }
+        mavenCentral()
+        maven {
+            url 'http://oss.sonatype.org/content/repositories/snapshots'
+        }
     }
 }
 

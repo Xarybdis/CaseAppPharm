@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_news">
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.example.caseapppharmy.ui.fragments.news_fragment.NewsFragment"
+        tools:layout="fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_pharmacy"
+        android:name="com.example.caseapppharmy.ui.fragments.pharmacy_list_fragment.PharmacyListFragment"
+        tools:layout="fragment_pharmacy" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.caseapppharmy.ui.fragments.profile_fragment.ProfileFragment"
+        tools:layout="fragment_profile" />
+</navigation>

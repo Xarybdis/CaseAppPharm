@@ -4,16 +4,15 @@ import android.widget.EditText
 
 class Utilities {
     companion object {
-        fun validateFields(text: EditText, text2: EditText): Boolean {
-            if (text.text.isEmpty()) {
-                text.setError("Lütfen bu alanı doldurun.")
-                return false
+
+        fun validateFields(vararg viewEditText: EditText) {
+
+            viewEditText.forEach {
+                if (it.text.isEmpty()) {
+                    it.setError("Lütfen bu alanı doldurun.")
+                    return
+                }
             }
-            if (text2.text.isEmpty()) {
-                text2.setError("Lütfen bu alanı doldurun.")
-                return false
-            } else
-                return true
         }
     }
 }

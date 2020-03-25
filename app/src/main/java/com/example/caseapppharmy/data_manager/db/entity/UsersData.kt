@@ -4,11 +4,17 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+
 @Entity(tableName = "user_table")
 data class UsersData(
     @PrimaryKey
-    @ColumnInfo(name = "username")
-    val userName: String,
-    val password: String,
-    val photo: Int?
+    @ColumnInfo(name = "usermail")
+    val userMail: String,
+    @ColumnInfo(name = "password")
+    val password: String?,
+    @ColumnInfo(name = "firstname")
+    val firstName: String?,
+    @ColumnInfo(name = "lastname")
+    val lastName: String?,
+    val photo: String?
 )
