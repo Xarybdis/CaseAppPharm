@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -36,7 +37,11 @@ class PharmacyListFragment : Fragment() {
         searchPharmacy.setOnClickListener {
             val city = filterCity.text.toString()
             val district = filterDistrict.text.toString()
-            setPharmacyList(district, city)
+            if (city.isNotEmpty() && district.isNotEmpty()) {
+                setPharmacyList(district, city)
+            } else {
+                Toast.makeText(context, "Lütfen şehir ve ilçe bilgisini giriniz.", Toast.LENGTH_LONG).show()
+            }
         }
     }
 
